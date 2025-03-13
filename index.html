@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark-mode">
+    <div class="tabs">
+      <button class="tab-btn" onclick="openTab('cipher')">Cipher Tool</button>
+      <button class="tab-btn" onclick="openTab('videos')">Videos</button>
+      <button class="tab-btn" onclick="openTab('discussion')">
+        Discussion Board
+      </button>
+      <button class="tab-btn mode-toggle" onclick="toggleMode()">
+        🌙 Dark Mode
+      </button>
+    </div>
+
+    <!-- Cipher Tool Tab -->
+    <div class="tab-content active" id="cipher">
+      <h2>Caesar Cipher</h2>
+      <input type="text" id="text" placeholder="Enter text" />
+      <input type="number" id="shift" placeholder="Enter shift value" />
+      <br />
+      <button onclick="encryptText()">Encrypt</button>
+      <button onclick="decryptText()">Decrypt</button>
+
+      <h4>Encrypted Text:</h4>
+      <p id="encryptedOutput">-</p>
+
+      <h4>Decrypted Text:</h4>
+      <p id="decryptedOutput">-</p>
+    </div>
+
+    <!-- Videos Tab -->
+    <div class="tab-content" id="videos">
+      <h2>Videos on Encryption & Decryption</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://youtu.be/o_g-M7UBqI8?si=IT-wbWNXwEoCU1IEI"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://youtu.be/9u6sovgxiH4?si=7C_UUtrAMh3ztL9S"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Discussion Board Tab -->
+    <div class="tab-content" id="discussion">
+      <h2>Discussion Board</h2>
+      <h3>Why is encryption important?</h3>
+      <p>
+        Encryption protects data from theft, alteration, or compromise by
+        converting it into a secret code accessible only with a unique digital
+        key.
+      </p>
+      <p>
+        Data encryption is important because it helps protect people's privacy,
+        and secures data from attackers and other cybersecurity threats.
+        <a
+          href="https://cloud.google.com/learn/what-is-encryption"
+          target="_blank"
+          >Learn more</a
+        >.
+      </p>
+
+      <h3>Can encryption be misused?</h3>
+      <p>
+        - Attackers can use encryption to hold a victim's data or device
+        hostage, demanding payment in exchange for the decryption key. This type
+        of attack, known as ransomware, is becoming increasingly common and can
+        cause significant financial or reputational damage to victims.
+      </p>
+      <p>
+        Encrypted ransomware has affected individuals, corporations, hospitals,
+        and governments.
+        <a
+          href="https://cqr.company/web-vulnerabilities/misuse-of-cryptography/#:~:text=Attackers%20can%20use%20encryption%20to,or%20reputational%20damage%20to%20victims."
+          target="_blank"
+          >Read more</a
+        >.
+      </p>
+
+      <h3>- Encrypted ransomware: Holding digital assets hostage</h3>
+      <p>
+        In the world of cyber threats, ransomware has become increasingly
+        infamous. These malicious software strains encrypt victims' files or
+        entire systems, holding them ransom until a fee, often demanded in
+        cryptocurrency, is paid. Due to the strong encryption algorithms
+        employed, victims are typically unable to regain access to their files
+        without the decryption key held by the attacker. This form of
+        cyber-extortion has targeted not only individuals but major
+        corporations, hospitals, and even city governments.
+      </p>
+      <p>
+        <a
+          href="https://www.flagright.com/post/encryption-challenges-in-fraud-activities-and-their-solutions"
+          target="_blank"
+          >Explore ethical concerns</a
+        >.
+      </p>
+
+      <h3>Discussion on real-life ethical concerns about encryption</h3>
+      <p>
+        The ethical dilemma surrounding encryption revolves around the tension
+        between privacy rights and national security imperatives. On one hand,
+        advocating for strong encryption is paramount to safeguarding individual
+        privacy, ensuring freedom of speech, and fostering trust in digital
+        technologies.
+      </p>
+      <p>
+        <a
+          href="https://cronolock.ca/the-lock-blog/the-ethics-of-encryption-balancing-privacy-rights-and-national-security#:~:text=The%20ethical%20dilemma%20surrounding%20encryption,fostering%20trust%20in%20digital%20technologies."
+          target="_blank"
+          >Explore ethical concerns</a
+        >.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

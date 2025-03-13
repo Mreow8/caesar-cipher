@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #1e1e2f;
+  color: rgb(192, 224, 241);
+  margin: 0;
+  padding: 0;
+}
+
+/* Tabs Navigation */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background: #333;
+  padding: 10px;
+}
+#discussion p {
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#discussion h2,
+#discussion h3 {
+  text-align: center;
+}
+
+.tab-btn {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.tab-btn:hover {
+  background: #777;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+/* Show active tab */
+.tab-content.active {
+  display: block;
+}
+
+/* Cipher Tool Styling */
+#cipher {
+  background: #252545;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: #ffcc00;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff8800;
+}
+
+p {
+  font-size: 18px;
+
+  margin-top: 15px;
+  color: #f5f3eb;
+}
+/* Lig/* Light Mode Styles */
+.light-mode {
+  background: #faf3e0; /* Warm beige */
+  color: #3e2723; /* Deep charcoal text */
+}
+
+.light-mode .tabs {
+  background: #d7ccc8; /* Light mocha */
+}
+
+.light-mode .tab-btn {
+  background: #bcaaa4; /* Muted taupe */
+  color: #5d4037; /* Warm brown */
+}
+
+.light-mode .tab-btn:hover {
+  background: #a1887f; /* Slightly darker taupe */
+}
+
+.light-mode #cipher {
+  background: #efebe9; /* Soft cream */
+  color: #3e2723; /* Deep charcoal */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode h2 {
+  color: #6d4c41; /* Dark rust */
+}
+
+.light-mode input {
+  background: #ffffff;
+  color: #3e2723;
+  border: 1px solid #a1887f; /* Soft warm brown */
+}
+
+.light-mode button {
+  background: #ff8a65; /* Muted coral */
+  color: white;
+}
+
+.light-mode button:hover {
+  background: #d84315; /* Rich burnt orange */
+}
+
+.light-mode p {
+  color: #5d4037; /* Warm brown */
+}
+/* Link styles for better visibility */
+a {
+  color: #66c2ff; /* Light blue for dark mode */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Light mode link styles */
+.light-mode a {
+  color: #0066cc; /* Blue for light mode */
+}
+
+.light-mode a:hover {
+  color: #004499; /* Darker blue on hover */
+}
