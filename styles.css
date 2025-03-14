@@ -191,7 +191,10 @@ a:hover {
     gap: 20px;
   }
   .video-container {
-    height: 450px; /* Adjust to your preferred height */
+    height: 350px; /* Adjust to your preferred height */
+  }
+  .tab-btn {
+    padding: 8px 15px;
   }
 }
 .video-container {
