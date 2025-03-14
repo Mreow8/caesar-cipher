@@ -11,11 +11,12 @@ body {
 .tabs {
   display: flex;
   justify-content: center;
+
   background: #333;
   padding: 10px;
 }
 #discussion p {
-  text-align: left;
+  text-align: justify;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
@@ -180,4 +181,30 @@ a:hover {
   .light-mode .mode-toggle::before {
     content: "☀️"; /* Show light mode icon when in light mode */
   }
+  .video-container {
+    width: 45%;
+  }
+  #videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: 10px auto;
+  overflow: hidden;
+  padding-top: 30%; /* Reduce aspect ratio for a shorter height */
+  max-height: 250px; /* Adjust to your preferred height */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
