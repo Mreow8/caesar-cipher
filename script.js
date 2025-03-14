@@ -64,15 +64,17 @@ function decryptText() {
   document.getElementById("decryptedOutput").textContent = decryptedText;
 }
 
-// Tab switching
 function openTab(tabId) {
-  let tabs = document.getElementsByClassName("tab-content");
-  for (let tab of tabs) {
-    tab.classList.remove("active");
-  }
-  document.getElementById(tabId).classList.add("active");
-}
+  let tabs = document.querySelectorAll(".tab-content");
 
+  // Hide all tabs
+  tabs.forEach((tab) => {
+    tab.style.display = "none";
+  });
+
+  // Show only the selected tab
+  document.getElementById(tabId).style.display = "block";
+}
 // Dark Mode / Light Mode Toggle
 function toggleMode() {
   let body = document.body;
