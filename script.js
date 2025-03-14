@@ -89,6 +89,13 @@ function toggleMode() {
     modeButton.textContent = "🌙 Dark Mode";
   }
 }
+function clearFields() {
+  document.getElementById("text").value = "";
+  document.getElementById("shift").value = "";
+
+  document.getElementById("encryptedOutput").textContent = "-";
+  document.getElementById("decryptedOutput").textContent = "-";
+}
 
 // Show the first tab by default
 document.addEventListener("DOMContentLoaded", function () {
